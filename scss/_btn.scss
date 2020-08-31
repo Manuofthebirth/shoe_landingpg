@@ -1,0 +1,22 @@
+.btn {
+  // background: green;
+  background: var(--clr-accent, green); // CSS variable
+  border-radius: .25em;
+  // color: #fff;
+  color: var(--clr-text, #fff); // CSS variable
+  display: inline-block;
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: .5em 1.25em;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition:
+    transform 250ms ease-in-out,
+    opacity 175ms linear;
+} 
+
+.btn:hover,
+.btn:focus {
+  opacity: .8;
+  transform: scale(1.1);
+}
