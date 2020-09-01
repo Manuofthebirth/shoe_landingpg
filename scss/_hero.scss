@@ -1,0 +1,31 @@
+.hero {
+  color: #fff;
+  text-align: center;
+  padding: 15em 0;
+  background: #222;
+
+  // if browser supports background-blend-mode
+  @supports (background-blend-mode: multiply) {
+    background: url(../img/shoe-3.png),
+      // background-repeat: no-repeat,
+      radial-gradient(#444, #111);
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.hero__title {
+  font-size: 4rem; // default for browser support
+  font-size: clamp(3rem, calc(5vw + 1rem, 4.5rem)); // smallest 3rem; grows at calc rate until biggest (4.5rem) 
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+// any direct child element will have this
+.spacing>*+* {
+  margin-top: var(--spacer, 2rem)
+}
+
+
