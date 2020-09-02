@@ -14,4 +14,4 @@ You may check it [here](https://shoe-landingpg.hostman.site/).
 * Default color setups
 * Aligned product details in featured section
 * Text aligned to the right in the second shoe article
-* Different class names (.shoe-1; .shoe-2.. instead of shoe-red; shoe-white..)
+* Different class names (.shoe-1; .shoe-2.. instead of .shoe-red; .shoe-white..)
