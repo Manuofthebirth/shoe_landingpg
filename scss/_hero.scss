@@ -23,9 +23,4 @@
   text-transform: uppercase;
 }
 
-// any direct child element will have this
-.spacing>*+* {
-  margin-top: var(--spacer, 2rem)
-}
-
 
