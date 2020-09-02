@@ -1,0 +1,71 @@
+.product {
+  background: radial-gradient(var(--clr-inner, white), var(--clr-outer, blue)); // white and blue by default
+  border-radius: 1em;
+  margin-bottom: 5em;
+  padding: 3em;
+  text-align: center;
+
+  &__title {
+    font-size: clamp(3rem, calc(5vw + 1rem), 5.5rem);
+    line-height: 1;
+    color: #fff;
+    text-shadow: 0 0 .2em rgba(#000, .2);
+    text-transform: uppercase;
+  }
+
+  &__image {
+    margin: -5em 0 0 0;
+  }
+
+  // queries - 720px
+  @media (min-width: 45em) {
+    margin-bottom: 9em;
+    // padding-bottom: 10em;
+    text-align: left;
+
+    &__title {
+      margin: 0;
+    }
+
+    &__image {
+      float: right;
+      margin: 0 -5em 0 0;
+      width: 65%;
+      // outline: 2px solid black;
+      // shape-outside: circle(30%);
+      shape-outside: url(../img/shoe-1.png);
+      // shape-margin: 1em; // push things inside shape away after 1em
+    }
+
+    // shoe 
+    &.shoe-left {
+      text-align: right;
+      
+      .product__image {
+        float: left;
+        shape-outside: url(../img/shoe-2.png);
+        margin: 0 0 0 -5em;
+      }
+    }
+  }
+}
+
+// custom properties
+.shoe-1 {
+  --clr-inner: #faa700;
+  --clr-outer: #e48d00;
+  --clr-accent: #a1173c;
+}
+
+.shoe-2 {
+  --clr-inner: #fce4b3;
+  --clr-outer: #eac886;
+  --clr-accent: #2f4858;
+}
+
+.shoe-3 {
+  --clr-inner: #6dd5ed;
+  --clr-outer: #2193b0;
+  --clr-accent: #008951;
+}
+
