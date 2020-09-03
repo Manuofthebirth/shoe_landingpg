@@ -10,3 +10,4 @@ This project is based on [Kevin Powell](https://github.com/kevin-powell)'s [tuto
 * Default color setups
 * Aligned product details in featured section
 * Text aligned to the right in the second shoe article
+* Responsive footer added
