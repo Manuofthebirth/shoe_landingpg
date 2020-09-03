@@ -51,5 +51,18 @@ section {
 
 // any direct child element will have this
 .spacing>*+* {
-  margin-top: var(--spacer, 2rem)
+  margin-top: var(--spacer, 2rem);
+}
+
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+
+  // all direct children
+  & > * {
+   flex-basis: 30%;
+   min-width: 15em;
+  }
 }

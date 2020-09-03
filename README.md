@@ -15,3 +15,4 @@ You may check it [here](https://shoe-landingpg.hostman.site/).
 * Aligned product details in featured section
 * Text aligned to the right in the second shoe article
 * Different class names (.shoe-1; .shoe-2.. instead of .shoe-red; .shoe-white..)
+* Responsive footer added

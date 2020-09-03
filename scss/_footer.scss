@@ -1,0 +1,54 @@
+.footer {
+  background: $dark-gray;
+  color: #fff;
+
+  &__content {
+    flex-wrap: wrap;
+    flex-basis: 30%;
+
+    @media (min-width: 44em) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+  }
+  
+  &__icon {
+    color: #fff;
+    margin: 0 1em;
+    transform: scale(.85);
+    transition: transform 250ms ease-in-out;
+
+    &:hover,
+    &:focus {
+      transform: scale(1);
+      opacity: .7;
+    }
+  }
+
+  &__menu {
+    list-style: none;
+    margin: 1.5em 2em;
+    padding: 0;
+    
+    &__link {
+      color: #fff;
+      text-decoration: none;
+      
+      &:hover {
+        color: rgba(255, 255, 255, 0.712);
+      }
+    }
+
+    &__title {
+      font-weight: 700;
+    }
+  }
+}
+
