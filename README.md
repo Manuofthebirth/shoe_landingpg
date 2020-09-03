@@ -6,7 +6,7 @@ This project is based on [Kevin Powell](https://github.com/kevin-powell)'s [tuto
 
 I left the scss folder exposed since this is purely a Sass project.
 
-You may check it [here](https://shoe-landingpg.hostman.site/).
+You may check it [here](https://shoe-landingpg-bb3d.hostman.site/).
 
 ## What's different from the tutorial?
 
