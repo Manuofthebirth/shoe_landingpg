@@ -220,4 +220,61 @@ section {
 
 .footer {
   background: #333;
+  color: #fff;
+}
+
+.footer__content {
+  flex-wrap: wrap;
+  flex-basis: 30%;
+}
+
+@media (min-width: 44em) {
+  .footer__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.footer__icons {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.footer__icon {
+  color: #fff;
+  margin: 0 1em;
+  transform: scale(0.85);
+  transition: transform 250ms ease-in-out;
+}
+
+.footer__icon:hover, .footer__icon:focus {
+  transform: scale(1);
+  opacity: .7;
+}
+
+.footer__menu {
+  list-style: none;
+  margin: 2em;
+  padding: 0;
+}
+
+@media (min-width: 44em) {
+  .footer__menu {
+    margin: 1em 2em;
+  }
+}
+
+.footer__menu__link {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__menu__link:hover {
+  color: rgba(255, 255, 255, 0.712);
+}
+
+.footer__menu__title {
+  font-weight: 700;
 }
