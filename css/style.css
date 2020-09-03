@@ -64,6 +64,18 @@ section {
   margin-top: var(--spacer, 2rem);
 }
 
+.split {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: center;
+}
+
+.split > * {
+  flex-basis: 30%;
+  min-width: 15em;
+}
+
 .featured {
   background: #eee;
 }
@@ -118,18 +130,6 @@ section {
   .featured__details {
     margin-top: 1em;
   }
-}
-
-.split {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2em;
-  justify-content: center;
-}
-
-.split > * {
-  flex-basis: 30%;
-  min-width: 15em;
 }
 
 .hero {
@@ -216,4 +216,8 @@ section {
   --clr-inner: #6dd5ed;
   --clr-outer: #2193b0;
   --clr-accent: #008951;
+}
+
+.footer {
+  background: #333;
 }
