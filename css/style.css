@@ -256,14 +256,8 @@ section {
 
 .footer__menu {
   list-style: none;
-  margin: 2em;
+  margin: 1.5em 2em;
   padding: 0;
-}
-
-@media (min-width: 44em) {
-  .footer__menu {
-    margin: 1em 2em;
-  }
 }
 
 .footer__menu__link {
